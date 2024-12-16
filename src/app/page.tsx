@@ -8,6 +8,10 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/icons";
+import { DownloadIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -29,19 +33,52 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+              <Button 
+                variant="outline" 
+                className="gap-2" 
+                asChild>
+                  <Link href="/Shanuka_Amantha_CV.pdf" download>
+                  <DownloadIcon className="h-4 w-4" />
+                  Download CV
+                  </Link>
+                  </Button>
+                    
+                    <Button 
+                      variant="outline" 
+                      className="gap-2 ml-2" 
+                      asChild>
+                      <Link href="mailto:shanuka.uni@gmail.com">
+                      <MailIcon className="h-4 w-4" />
+                      Email
+                      </Link>
+                    </Button>
+
+                    <Button 
+                      variant="outline" 
+                      className="gap-2 ml-2" 
+                      asChild>
+                      <Link href="tel:+94766897710">
+                      <PhoneIcon className="h-4 w-4" />
+                      +94 76 689 7710
+                      </Link>
+                    </Button>
+                    </BlurFade>
+                    
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
+              
             </BlurFade>
           </div>
         </div>
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold">About me</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
@@ -100,10 +137,38 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold">Programming Languages</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={skill}>{skill}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="skills2">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Web/Mobile Development</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.skills2.map((skill, id) => (
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                <Badge key={skill}>{skill}</Badge>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="skills3">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Databases and Cloud Services</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.skills3.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 <Badge key={skill}>{skill}</Badge>
               </BlurFade>
@@ -124,7 +189,7 @@ export default function Page() {
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
+                  websites to complex web applications & mobile applications. Here are a few of my
                   favorites.
                 </p>
               </div>
@@ -152,6 +217,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      {/*
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -195,6 +261,8 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      */}
+      
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>

@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { DownloadIcon, HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Shanuka Amantha",
@@ -13,25 +13,46 @@ export const DATA = {
     "As an undergraduate software engineer, my vision extends beyond mastering technical skills. I aspire to be a catalyst for innovation, leveraging my knowledge and expertise to develop transformative software solutions. With a passion for collaboration, I aim to work alongside diverse teams, pooling our talents to tackle complex challenges and deliver impactful projects.",
   avatarUrl: "/me.png",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
+    
+    "C",
     "C++",
+    "Java",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+  
   ],
+  skills2: [
+    
+    "React",
+    ".NET",
+    "Angular",
+    "Next.js",
+    "Node.js",
+    "Spinrg Boot",
+    "Bootstrap",
+    "Kotlin",
+    "Html",
+    "Tailwind CSS",
+    "CSS",
+    
+  ],
+  skills3: [
+    "Azure",
+    "MongoDB",
+    "MySQL",
+    "MSSQL",
+    "Aws",
+    "Firebase",
+  ],
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "https://medium.com/@shanukaamantha", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "shanuka.uni@gmail.com",
+    tel: "+94 76 689 7710",
     social: {
       GitHub: {
         name: "GitHub",
@@ -54,10 +75,10 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
+      Resume: {
+        name: "Resume",
+        url: "/Shanuka_Amantha_CV.pdf",
+        icon: DownloadIcon,
         navbar: true,
       },
       email: {
@@ -72,148 +93,92 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "Fiverr",
+      href: "https://fiverr.com",
       badges: [],
       location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
+      title: "Web Developer & Video Editor",
+      logoUrl: "/fiverr.png",
       start: "May 2021",
-      end: "Oct 2022",
+      end: "Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    },
+        "I have been working as a freelancer on Fiverr for the past 2 years. I have completed over 100+ projects and have a 5-star rating. I have worked on projects such as video editing, web development, and graphic design.",},
     {
-      company: "Shopify",
+      company: "Upwork",
       badges: [],
-      href: "https://shopify.com",
+      href: "https://upwork.com",
       location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
+      title: "Telegram/Discord Bot Developer & Short Content Editor",
+      logoUrl: "/upwork.png",
+      start: "August 2024",
+      end: "Present",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
-    {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
-    },
+        "I have been working a a freelancer on Upwork since last august. I have worked on projects such as video editing, web development, Telegram and Discord Bot developmet.",},
+  
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
+      school: "Sri Lanka Institute of Information Technology (SLIIT)",
+      href: "https://www.sliit.lk",
+      degree: "BSc (Hons) in Information Technology (Undergraduate)",
+      logoUrl: "/sliit.jpg",
+      start: "2022",
+      end: "2026",
     },
     {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
+      school: "Royal College Panadura",
+      href: "",
+      degree: "GCE Advanced Level Examination - Physical Science Stream - 1C 2S",
+      logoUrl: "/rcp.jpg",
+      start: "2017",
+      end: "2020",
     },
     {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
+      school: "Royal College Panadura",
+      href: "",
+      degree: "GCE Ordinary Level Examination - 8A 1B",
+      logoUrl: "/rcp.jpg",
+      start: "2006",
+      end: "2017",
     },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
-    },
+    
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "FarmLink",
+      href: "https://github.com/Shyboy443/FarmLink",
+      dates: "March 2024 - May 2024",
       active: true,
-      description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      description:"FarmLink is an innovative agricultural marketplace designed to streamline the buying and selling of farm products and services. Key features include Advanced Inventory Management, Intelligent Bidding System, Comprehensive Admin Dashboard, Flexible Discount Mechanism, Integrated Delivery Logistics, Customer Engagement Tools.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "React",
+        "MongoDB",
+        "Express",
+        "Node.js",
+        "Bootstrap",
+        "JavaScript",
+        "HTML",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
+          type: "Scource",
+          href: "https://github.com/Shyboy443/FarmLink",
+          icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/farmlink.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Calc Note",
+      href: "https://github.com/4rthurrr/calc-notes",
+      dates: "October 2024 - November 2024",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Inspired by the innovative iPad Math Notes/Calculator app using GEMINI API, this project combines AI-powered math recognition with an intuitive drawing and calculating interface. Ideal for beginners and experienced developers, it offers hands-on experience.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -227,17 +192,17 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://github.com/4rthurrr/calc-notes",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/4rthurrr/calc-notes",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/calcnotes.png",
+      video: "",
     },
     {
       title: "llm.report",
@@ -302,6 +267,7 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
   ],
+  /*
   hackathons: [
     {
       title: "Hack Western 5",
@@ -686,5 +652,5 @@ export const DATA = {
         },
       ],
     },
-  ],
+  ],*/
 } as const;
