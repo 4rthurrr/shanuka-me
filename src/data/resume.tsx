@@ -4,7 +4,7 @@ import { DownloadIcon, HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Shanuka Amantha",
   initials: "SA",
-  url: "https://shanuka.me",
+  url: "https://x.com/AmanthaS4S",
   location: "Panadura, Sri Lanka",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
@@ -56,21 +56,21 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/4rthurrr",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/shanuka-amantha/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/AmanthaS4S",
         icon: Icons.x,
 
         navbar: true,
@@ -81,12 +81,12 @@ export const DATA = {
         icon: DownloadIcon,
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:shanuka.uni@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -178,16 +178,15 @@ export const DATA = {
       dates: "October 2024 - November 2024",
       active: true,
       description:
-        "Inspired by the innovative iPad Math Notes/Calculator app using GEMINI API, this project combines AI-powered math recognition with an intuitive drawing and calculating interface. Ideal for beginners and experienced developers, it offers hands-on experience.",
+        "Inspired by the innovative iPad Math Notes/Calculator app using GEMINI API, this project combines AI-powered math recognition with an intuitive drawing and calculating interface. Ideal for beginners and experienced developers, it offers hands-on experience with advanced math concepts.",
       technologies: [
-        "Next.js",
+        "Python",
+        "Gemini API",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "JavaScript",
         "TailwindCSS",
-        "Stripe",
+        "HTML",
         "Shadcn UI",
-        "Magic UI",
       ],
       links: [
         {
@@ -205,55 +204,45 @@ export const DATA = {
       video: "",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "InkPad",
+      href: "https://github.com/4rthurrr/InkPad",
+      dates: "May 2024 - June 2024",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "InkPad is your ultimate task manager on Android, offering seamless productivity with its intuitive features. With full CRUD (Create, Read, Update, Delete) operations, you can effortlessly manage tasks. Its robust search functionality ensures you never lose track of important details.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Kotlin",
+        "Android",
+        "Java",
+        "SQLLite",
+        "Rooms"
       ],
       links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
+        
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/4rthurrr/InkPad",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/inkpad.png",
+      video: "",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
+      title: "Next.js Portfolio",
+      href: "https://github.com/4rthurrr/shanuka-me",
       dates: "April 2023 - March 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Minimalist developer portfolio using Next.js 14, React, TailwindCSS, Shadcn UI and Magic UI. This project showcases my skills, experience, and projects in a clean, professional layout. It also includes a blog section for sharing insights and updates.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "React",
         "TailwindCSS",
         "Shadcn UI",
         "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        
       ],
       links: [
         {
@@ -261,10 +250,15 @@ export const DATA = {
           href: "https://automatic.chat",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/4rthurrr/shanuka-me",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "",
+      image: "/portfolio.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
   ],
   /*
