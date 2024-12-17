@@ -8,7 +8,7 @@ export const DATA = {
   location: "Panadura, Sri Lanka",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "IT Undergraduate | University of SLIIT",
+    "IT Undergraduate at SLIIT",
   summary:
     "As an undergraduate software engineer, my vision extends beyond mastering technical skills. I aspire to be a catalyst for innovation, leveraging my knowledge and expertise to develop transformative software solutions. With a passion for collaboration, I aim to work alongside diverse teams, pooling our talents to tackle complex challenges and deliver impactful projects.",
   avatarUrl: "/me.png",
