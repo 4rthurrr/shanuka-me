@@ -204,6 +204,36 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Google Books Search",
+      href: "https://google-books-shanukame.vercel.app/",
+      dates: "January 2024 - January 2024",
+      active: true,
+      description:"This project is a React application that allows users to search for books using the Google Books API. Users can enter a search query, view a list of books matching the query, and click on a book to see more details.",
+      technologies: [
+        "React",
+        "Google Books API",
+        "TailwindCSS",
+        "HTML",
+        "JavaScript",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://google-books-shanukame.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Scource",
+          href: "https://github.com/4rthurrr/google-books-app",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/googlebooks.png",
+      video:
+        "",
+    },
+    {
       title: "InkPad",
       href: "https://github.com/4rthurrr/InkPad",
       dates: "May 2024 - June 2024",
