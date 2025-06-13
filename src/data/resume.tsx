@@ -128,7 +128,7 @@ export const DATA = {
     {
       school: "Royal College Panadura",
       href: "",
-      degree: "GCE Advanced Level Examination - Physical Science Stream - 1C 2S",
+      degree: "GCE Advanced Level Examination - Physical Science Stream",
       logoUrl: "/rcp.jpg",
       start: "2017",
       end: "2020",
@@ -136,7 +136,7 @@ export const DATA = {
     {
       school: "Royal College Panadura",
       href: "",
-      degree: "GCE Ordinary Level Examination - 8A 1B",
+      degree: "GCE Ordinary Level Examination",
       logoUrl: "/rcp.jpg",
       start: "2006",
       end: "2017",
@@ -144,6 +144,36 @@ export const DATA = {
     
   ],
   projects: [
+    {
+      title: "LearnLink",
+      href: "https://github.com/4rthurrr/LearnLink",
+      dates: "April 2025 - June 2025",
+      active: true,
+      description:
+        "",
+      technologies: [
+        "Spring Boot",
+        "React",
+        "JavaScript",
+        "TailwindCSS",
+        "MySQL",
+        
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://learn-link-mocha.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/4rthurrr/LearnLink",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/learnlink.jpeg",
+      video: "",
+    },
     {
       title: "FarmLink",
       href: "https://github.com/Shyboy443/FarmLink",
@@ -291,6 +321,8 @@ export const DATA = {
         "",
     },
   ],
+
+
   /*
   hackathons: [
     {
