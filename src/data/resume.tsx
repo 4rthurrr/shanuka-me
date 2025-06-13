@@ -150,7 +150,7 @@ export const DATA = {
       dates: "April 2025 - June 2025",
       active: true,
       description:
-        "",
+        "A collaborative learning platform designed to connect learners, facilitate knowledge sharing, and provide personalized learning experiences through social interaction and AI-powered recommendations.",
       technologies: [
         "Spring Boot",
         "React",
